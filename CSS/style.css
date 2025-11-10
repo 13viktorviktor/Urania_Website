@@ -61,6 +61,21 @@
             text-decoration: underline;
         }
 
+                /* Mobile Ansicht – kleinere Abstände zwischen Navigationselementen */
+@media (max-width: 768px) {
+    .nav-center {
+        gap: 10px; /* vorher 40px, jetzt enger zusammen */
+    }
+
+    nav a {
+        font-size: 15px; /* optional etwas kleinere Schrift */
+    }
+
+    .logo-link img {
+        height: 13px; /* etwas kleineres Logo, falls nötig */
+    }
+}
+
         .contact_text {
             text-decoration: none;
             color: #000000;
