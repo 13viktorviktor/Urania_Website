@@ -47,7 +47,7 @@
     <img src="1182-White.jpg" alt="1182-White">
     <img src="1183-Rusty.jpg" alt="1183-Rusty">
     <img src="1190-Rusty.jpg" alt="1190-Rusty">
-    <img src="1102-Blue.jpg" alt="1102-Blue">
+    <!-- <img src="1102-Blue.jpg" alt="1102-Blue">
     <img src="1103-Rusty.jpg" alt="1103-Rusty">
     <img src="1105-White.jpg" alt="1105-White">
     <img src="1106-Rusty.jpg" alt="1106-Rusty">
@@ -126,7 +126,7 @@
     <img src="1209-Rusty.jpg" alt="1209-Rusty">
     <img src="1210-Rusty.jpg" alt="1210-Rusty">
     <img src="1211-Rusty.jpg" alt="1211-Rusty">
-    <img src="1212-Blue.jpg" alt="1212-Blue">
+    <img src="1212-Blue.jpg" alt="1212-Blue"> -->
 </div>
         </div>
 
@@ -154,11 +154,39 @@ scrollBtn.onclick = function() {
 </script>
 
     </main>
+    
+<!-- Lightbox Overlay -->
+<div class="lightbox-overlay" id="lightbox">
+    <img id="lightbox-img" src="" alt="Großes Bild">
+</div>
 
     <footer>
         <a href="../Contact/Contact.html">Contact</a>
         <a href="../Imprint/imprint.html">Imprint</a>
     </footer>
+
+<script>
+// Alle Bilder in der Galerie auswählen
+const galleryImages = document.querySelectorAll('.image-grid-pictures img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+// Bild anklicken → Lightbox öffnen
+galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src; // Quelle des großen Bildes
+        lightboxImg.alt = img.alt;
+    });
+});
+
+// Lightbox schließen bei Klick auf Hintergrund
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) { // nur wenn Hintergrund angeklickt
+        lightbox.style.display = 'none';
+    }
+});
+</script>
 
 </body>
 </html> 
