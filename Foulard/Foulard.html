@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urania</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../Home/index.html" class="logo-link">
+                <img src="../LOGO_FOND/LOGO_URANIA.svg" alt="Urania Logo">
+            </a>
+            <div class="nav-center">
+                <a href="../Manifesto/Manifesto.html">Manifesto</a>
+                <a href="../Past_Exhibition/Past-Exhibition.html">Past Exhibition</a>
+                <a href="../Senza Titolo/Senza-Titolo.html">Senza Titolo</a>
+                <a href="../Foulard/Foulard.html" class="active">Foulard</a>
+                <a href="../Other/Other.html">Other</a>
+                <a href="../Contact/Contact.html">Contact</a>
+                <a href="../Blog/Blog.html">Blog</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+       <div class="content-container">
+                <h1></h1>
+                <div class="content-placeholder-contact">
+                    <div>
+                        <p class="contact-text">Details about the Foulard will be available soon...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-grid-pictures">
+    <img src="Foulard-1.jpg" alt="Foulard-1">
+    <img src="Foulard-2.jpg" alt="Foulard-2">
+    <img src="Foulard-3.jpg" alt="Foulard-3">
+    <img src="Foulard-4.jpg" alt="Foulard-4">
+    <img src="Foulard-5.jpg" alt="Foulard-5">
+    <img src="Foulard-6.jpg" alt="Foulard-6">
+</div>
+
+        <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" aria-label="Nach oben scrollen">↑</button>
+<script>
+const scrollBtn = document.getElementById('scrollToTopBtn');
+
+// Zeige Button beim Scrollen
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+};
+
+// Scroll nach oben beim Klick
+scrollBtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+</script>
+    </main>
+
+   <footer>
+        <a href="../Contact/Contact.html">Contact</a>
+        <a href="../Imprint/imprint.html">Imprint</a>
+    </footer>
+
+</body>
+</html>
