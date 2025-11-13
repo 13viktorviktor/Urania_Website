@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urania</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <a href="../Home/index.html" class="logo-link">
+            <img src="../LOGO_FOND/LOGO_URANIA.svg" alt="Urania Logo">
+        </a>
+        <div class="nav-center">
+            <a href="../Manifesto/Manifesto.html">Manifesto</a>
+            <a href="../Past_Exhibition/Past-Exhibition.html">Past Exhibition</a>
+            <a href="../Senza Titolo/Senza-Titolo.html" class="active" style="color:white ">Senza Titolo</a>
+            <a href="../Foulard/Foulard.html">Foulard</a>
+            <a href="../Other/Other.html">Other</a>
+            <a href="../Contact/Contact.html">Contact</a>
+            <a href="../Blog/Blog.html">Blog</a>
+        </div>
+    </nav>
+</header>
+
+<head>
+    ...
+    <style>
+        header {
+            background-color: #c2d0dd;
+            box-shadow: none;
+        }
+
+        header nav a {
+            color: white;
+        }
+
+        header nav a:hover {
+           text-decoration: underline;
+        }
+
+        header img {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+    <main>
+        <main style="margin-top: 0;">
+   <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1;">
+     <img src="Senza Titolo Sant'Orsola.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Background">
+   </div>
+        <!-- Blog Page -->
+                <div class="exhibition-grid">
+
+           <head>
+    <style>
+        /* Nur Links mit der Klasse .exhibition-item betreffen */
+        a.exhibition-item {
+            text-decoration: none; /* kein Unterstrich standardmäßig */
+            color: white;
+        }
+
+        /* Wenn du über den Link hoverst */
+        a.exhibition-item:hover .exhibition-titel {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            Guggenheim, Venice<br>
+            Sep. 2025
+        </div>
+        <div class="exhibition-image">
+            <img src="grey.png" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            Museo Sant'Orsola, Florence<br>
+            5 Oct. 2025
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Sant'Orsola.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            La Casa Encendida, Madrid<br>
+            7 June 2024
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Madrid.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            Foyer del Teatro Grande, Brescia<br>
+            9 - 10 Oct. 2024
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Foyer.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            Pinacoteca Agneli - Pista 500, Turin<br>
+            27 May 2023
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Pinacoteca.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            Triennale Milano, Milan<br>
+            25 - 26 Mar. 2023
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Triennale Milano.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            ArtVerona - Castelvecchio Museum, Verona<br>
+            2022
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Castelvecchio.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+
+    <a href="../no.html" class="exhibition-item">
+        <div class="exhibition-titel">
+            SENZA TITOLO<br>
+            Teatrino Palazzo Grassi, Venice<br>
+            4 Dec. 2021
+        </div>
+        <div class="exhibition-image">
+            <img src="Senza Titolo Palazzo Grassi.jpg" alt="Urania Headgear Edition">
+        </div>
+    </a>
+</body>
+        </div>
+
+     <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" aria-label="Nach oben scrollen">↑</button>
+<script>
+const scrollBtn = document.getElementById('scrollToTopBtn');
+
+// Zeige Button beim Scrollen
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+    } else {
+        scrollBtn.style.display = "none";
+    }
+};
+
+// Scroll nach oben beim Klick
+scrollBtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+};
+</script>
+
+    </main>
+</body>
+</html>
