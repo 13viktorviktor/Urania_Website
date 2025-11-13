@@ -9,12 +9,15 @@
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo-link">
+            <a href="../Home/index.html" class="logo-link">
                 <img src="../LOGO_FOND/LOGO_URANIA.svg" alt="Urania Logo">
             </a>
             <div class="nav-center">
                 <a href="../Manifesto/Manifesto.html" class="active">Manifesto</a>
                 <a href="../Past_Exhibition/Past-Exhibition.html">Past Exhibition</a>
+                <a href="../Senza Titolo/Senza-Titolo.html">Senza Titolo</a>
+                <a href="../Foulard/Foulard.html">Foulard</a>
+                <a href="../Other/Other.html">Other</a>
                 <a href="../Contact/Contact.html">Contact</a>
                 <a href="../Blog/Blog.html">Blog</a>
             </div>
@@ -22,71 +25,73 @@
     </header>
 
     <main>
-       <!-- Manifesto Page -->
-            <div class="content-container">
-                <h1>Manifesto</h1>
-                <div class="content-placeholder">
-                    URANIA
-The world is full of clothes, more or less interesting; We do not wish to add any more.
-<br><br><br>
-URANIA is an interdisciplinary project in which fashion, art, design and music meet in a new way of formulating imaginaries that challenges the canons and habits with which fashion itself is codified.
-<br><br><br>
-It's a fashion project that questions the principles of authorship and new.<br>
-It's collaborative with the ambition to become a communitarian.<br>
-It's a series of limited editions.<br>
-It's the archive, which does not end up in the museum's display cases, as a design tool and a place for theoretical reflection.<br>
-It's Menard's Quixote – it questions us about the meaning of the object in relation to time.<br>
-It's a sign that it changes meaning in relation to the bodies that dress it and the context/spectator.<br>
-It's ready-made.<br>
-It's eco-friendly – and it's neither recycling/down-cycling.<br>
-It does not increase the value of the garment in aesthetic terms with the rhetoric of upcycling, but it restores the original value of the object.<br>
-It's political.<br>
-It's out of the fashion industry.<br>
-It's a research into new ways of designing.<br>
-It's cheap and exclusive.<br>
-It's one of a kind.<br>
-It's original.<br>
-It's ready-to-wear.<br>
-It's hacking.<br>
-It's a declaration of love for the original.<br>
-It's a reflection between true and fake.<br>
-It's see now and buy now.<br>
-It's to see clothes from another point of view as the Webler's statement taken up by Goldsmith takes on a new meaning.<br>
-It's an universal wardrobe.<br>
-It's a universal wardrobe.<br>
-It's a collective memory.<br>
-It's a short circuit of a compromised system.<br>
-It's a Favaretto core of the stratified history of fashion and costume, preserved and which becomes a message for the near future.<br>
-It's a printed rock by Trevisani.<br>
-It's of known and unknown origin.<br>
-It's FABIO QUARANTA, Raf Simons and Comme des Graçons as are Caraceni and Litrico.<br>
-It's made everywhere.<br>
-It already exist.<br>
-It does not produce any new garments.<br>
-
-</div>
-<div class="content-container" style="min-height: 40px; padding-top: 100px;">
-                <h1>Full Archive</h1>
+        <!-- Manifesto Page -->
+          <div class="content-container">
+                <h1></h1>
+            <div class="content-placeholder">
+                URANIA<br>
+                URANIA is an interdisciplinary project in which fashion, art, design and music meet in a new way of formulating imaginaries that challenges the canons and habits with which fashion itself is codified.
+                <br><br><br>
+                It's a fashion project that questions the principles of authorship and new.<br>
+                It's collaborative with the ambition to become a communitarian.<br>
+                It's a series of limited editions.<br>
+                It's the archive, which does not end up in the museum's display cases, as a design tool and a place for theoretical reflection.<br>
+                It's Menard's Quixote – it questions us about the meaning of the object in relation to time.<br>
+                It's a sign that it changes meaning in relation to the bodies that dress it and the context/spectator.<br>
+                It's ready-made.<br>
+                It's eco-friendly – and it's neither recycling/down-cycling.<br>
+                It does not increase the value of the garment in aesthetic terms with the rhetoric of upcycling, but it restores the original value of the object.<br>
+                It's political.<br>
+                It's out of the fashion industry.<br>
+                It's a research into new ways of designing.<br>
+                It's cheap and exclusive.<br>
+                It's one of a kind.<br>
+                It's original.<br>
+                It's ready-to-wear.<br>
+                It's hacking.<br>
+                It's a declaration of love for the original.<br>
+                It's a reflection between true and fake.<br>
+                It's see now and buy now.<br>
+                It's to see clothes from another point of view as the Webler's statement taken up by Goldsmith takes on a new meaning.<br>
+                It's an universal wardrobe.<br>
+                It's a collective memory.<br>
+                It's a short circuit of a compromised system.<br>
+                It's a Favaretto core of the stratified history of fashion and costume, preserved and which becomes a message for the near future.<br>
+                It's a printed rock by Trevisani.<br>
+                It's of known and unknown origin.<br>
+                It's FABIO QUARANTA, Raf Simons and Comme des Garçons as are Caraceni and Litrico.<br>
+                It's made everywhere.<br>
+                It already exist.<br>
+                It does not produce any new garments.<br>
             </div>
-                <div class="content-placeholder-allachive" id="archive-content" style="padding-top: 0;">
-    Lädt...
-</div>
         </div>
+
+        <!-- Archivbereich vorübergehend auskommentiert -->
+        <!--
+        <div class="content-container" style="min-height: 40px; padding-top: 100px;">
+            <h1>Full Archive</h1>
+        </div>
+        <div class="content-placeholder-allachive" id="archive-content" style="padding-top: 0;">
+            Lädt...
+        </div>
+        <script>
+        // Archive Text laden
+        fetch('Full_Archive_Text.txt')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('archive-content').innerHTML = data;
+            })
+            .catch(error => {
+                document.getElementById('archive-content').innerHTML = 'Fehler beim Laden des Archivs.';
+            });
+        </script>
+        -->
     </main>
-    <script>
-    // Archive Text laden
-fetch('Full_Archive_Text.txt')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('archive-content').innerHTML = data;
-    })
-    .catch(error => {
-        document.getElementById('archive-content').innerHTML = 'Fehler beim Laden des Archivs.';
-    });
-    </script>
 
     <!-- Scroll to Top Button -->
-<script>
+    <button id="scrollToTopBtn" aria-label="Nach oben scrollen">↑</button>
+
+    <script>
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     
     window.addEventListener('scroll', function() {
@@ -105,33 +110,9 @@ fetch('Full_Archive_Text.txt')
     });
     </script>
 
-    <button id="scrollToTopBtn" aria-label="Nach oben scrollen">↑</button>
-
-<script>
-const scrollBtn = document.getElementById('scrollToTopBtn');
-
-// Zeige Button beim Scrollen
-window.onscroll = function() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        scrollBtn.style.display = "block";
-    } else {
-        scrollBtn.style.display = "none";
-    }
-};
-
-// Scroll nach oben beim Klick
-scrollBtn.onclick = function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-};
-</script>
-
- <footer>
+    <footer>
         <a href="../Contact/Contact.html">Contact</a>
         <a href="../Imprint/imprint.html">Imprint</a>
     </footer>
-
 </body>
 </html>
