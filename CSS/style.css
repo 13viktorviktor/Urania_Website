@@ -1,67 +1,90 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* --- Fonts einbinden --- */
+@font-face {
+    font-family: 'Perpetua Titling MT';
+    src: url('../LOGO_FOND/PerpetuaTitlingMT-Light.woff2') format('woff2');
+    font-weight: normal; /* oder 'normal' – je nach Datei */
+    font-style: normal;
+}
 
-        body {
-            font-family: 'Perpetua Titling MT', serif;
-            src: url('../LOGO_FOND/Perpetua\ Titling\ MT\ Light.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            background-color: #ffffff;
-            color: #000000;
-        }
+@font-face {
+    font-family: 'Perpetua Titling MT';
+    src: url('../LOGO_FOND/PerpetuaTitlingMT-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
 
-        /* Header Navigation */
-        header {
-            background-color: white;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
+/* --- Grundlegendes Styling --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        nav {
-            max-width: 100%;
-            margin: 0;
-            display: flex;
-            align-items: center;
-            padding: 0 20px;
-            position: relative;
-        }
+body {
+    font-family: 'Perpetua Titling MT', serif;
+    font-weight: 300; /* nutzt automatisch Light-Version */
+    font-style: normal;
+    background-color: #ffffff;
+    color: #000000;
+}
 
-        .logo-link {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            left: 20px;
-        }
-        
-        .logo-link img {
-            height: 15px;
-            width: auto;
-        }
+/* --- Header Navigation --- */
+header {
+    background-color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-        .nav-center {
-            display: flex;
-            gap: 40px;
-            margin: 0 auto;
-        }
+nav {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
 
-        nav a {
-            text-decoration: none;
-            color: #000000;
-            font-size: 15px;
-        }
+.logo-link {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+}
 
-        nav a:hover {
-            color: blue;
-            text-decoration: underline;
-        }
+.logo-link img {
+    height: 15px;
+    width: auto;
+}
 
-                /* Mobile Ansicht – kleinere Abstände zwischen Navigationselementen */
+.nav-center {
+    display: flex;
+    gap: 40px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Perpetua Titling MT', serif;
+    font-weight: 300; /* Light-Version */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* --- Aktiver Menüpunkt (Bold Font) --- */
+nav a.active {
+    font-family: 'Perpetua Titling MT', serif;
+    font-weight: 700; /* schaltet automatisch auf Bold-Datei um */
+    color: rgb(0, 0, 0);
+}
+
+/* Mobile Ansicht – kleinere Abstände zwischen Navigationselementen */
 @media (max-width: 768px) {
     .nav-center {
         gap: 10px; /* vorher 40px, jetzt enger zusammen */
@@ -76,6 +99,7 @@
     }
 }
 
+
         .contact_text {
             text-decoration: none;
             color: #000000;
@@ -83,13 +107,12 @@
         }
 
         .contact_text:hover {
-            color: blue;
             text-decoration: underline;
         }
 
-        nav a.active {
+/*        nav a.active {
             font-weight: lighter;
-        }
+        } */
         .contact_text.active {
             font-weight: lighter;
         }
@@ -212,11 +235,9 @@
     flex: 1;
     text-align: left;
     font-size: 15px;
-    line-height: 1.6;
 }
 
 .exhibition-titel:hover {
-    color: blue;
     text-decoration: underline;
 }
 
@@ -325,5 +346,4 @@ footer {
         
         footer a:hover {
             text-decoration: underline;
-            color: blue;
         }
